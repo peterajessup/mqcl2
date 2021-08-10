@@ -1,7 +1,7 @@
 apiVersion: mq.ibm.com/v1beta1
 kind: QueueManager
 metadata:
-  name: mqcl1
+  name: mqcl2
   namespace: ibmmq
 spec:
   license:
@@ -17,10 +17,10 @@ spec:
     availability:
      type: SingleInstance
 #     type: NativeHA
-    name: CL1
+    name: CL2
     mqsc:
     - configMap:
-        name: cl-mqsc
+        name: cl2-mqsc
         items:
         - cl.mqsc
   template:
