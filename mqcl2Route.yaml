@@ -1,14 +1,14 @@
 kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
-  name: mqcl1route 
+  name: mqcl2route 
   namespace: ibmmq 
 spec:
   host: tls.chl.mq.ibm.com
   to:
     kind: Service
-    name: mqcl1-ibm-mq 
+    name: mqcl2-ibm-mq 
   port:
-    targetPort: 1414
+    targetPort: 1415
   tls:
     termination: passthrough
