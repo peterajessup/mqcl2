@@ -4,7 +4,7 @@ metadata:
   name: mqcl2route 
   namespace: ibmmq 
 spec:
-  host: tlsone.chl.mq.ibm.com
+  host: tlstwo.chl.mq.ibm.com
   to:
     kind: Service
     name: mqcl2-ibm-mq 
