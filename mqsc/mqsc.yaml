@@ -17,4 +17,8 @@ data:
     DEFINE CHANNEL(TO.CL2) CHLTYPE(CLUSRCVR) TRPTYPE(TCP) CONNAME('mqcl2-ibm-mq.mq.svc(1414)') CLUSTER(OCPCL) REPLACE
     DEFINE CHANNEL(TO.CL1) CHLTYPE(CLUSSDR) TRPTYPE(TCP) CONNAME('mqcl1-ibm-mq.mq.svc(1414)') CLUSTER(OCPCL) REPLACE
     DEFINE QALIAS(APPQ) TARGET(CLNQ) REPLACE
-    
+  mq.ini: |-
+    Service:
+      Name=AuthorizationService
+      EntryPoints=14
+      SecurityPolicy=UserExternal
